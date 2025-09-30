@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS HEAVEN | Signin</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link href="FAVICON.png" rel="icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff6f61; /* Replace with your own image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			background-color: #fef5e7;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+            position: relative;
+			
+        }
+
+        h2 {
+            color: #ff6f61;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 80px;
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #e2766c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ec5b4e;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-text a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+
+    
+    <div class="container">
+        <a href="index.html"><img src="FITNESS_HEAVEN_LOGO.png" alt="gym Icon"></a>
+        <h2>Signin Here</h2>
+        <form action="signin.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password">
+
+            <button type="submit">Login</button>
+
+            <p class="footer-text">Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
