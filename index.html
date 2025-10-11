@@ -13,51 +13,61 @@
     <!-- Carousel Text Styling -->
 <style>
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.55);
   border-radius: 10px;
-  padding: 20px;
-  bottom: 20%;
+  padding: 20px 25px;
+  max-width: 80%;
+  text-align: center;
   animation: fadeInUp 1s ease-in-out;
 }
 
 .carousel-caption h2 {
   color: #f53a29;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.3rem;
+  font-weight: 700;
   text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
 .carousel-caption p {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
-/* Smooth fade-in animation */
+/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translate(-50%, 30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
 
-/* Make text more readable on small screens */
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .carousel-caption {
-    bottom: 10%;
-    padding: 10px;
+    bottom: 8%;
+    padding: 10px 15px;
+    max-width: 100%;
   }
   .carousel-caption h2 {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
   }
   .carousel-caption p {
-    font-size: 1rem;
+    font-size: 0.3rem;
   }
 }
+
+
 </style>
   </head>
   <body>
@@ -87,14 +97,14 @@
     <!-- ✅ Navbar end -->
 
 
-    <!-- Carousel Start -->
+   <!-- Carousel Start -->
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
     <!-- Slide 1 -->
     <div class="carousel-item active" data-bs-interval="4000">
-      <img src="carousalimg1.png" class="d-block w-100" alt="Workout Image 1">
-      <div class="carousel-caption d-none d-md-block">
+      <img src="carousalimg1.png" class="d-block w-100" alt="Carousal Image 1">
+      <div class="carousel-caption">
         <h2>Push Your Limits</h2>
         <p>Transform your body and mind at FITNESS HEAVEN.</p>
       </div>
@@ -102,17 +112,17 @@
 
     <!-- Slide 2 -->
     <div class="carousel-item" data-bs-interval="4000">
-      <img src="carousalimg2.png" class="d-block w-100" alt="Workout Image 2">
-      <div class="carousel-caption d-none d-md-block">
-        <h2>Train Hard, Stay Strong</h2>
+      <img src="carousalimg2.png" class="d-block w-100" alt="Carousal Image 2">
+      <div class="carousel-caption">
+        <h2>Train Hard</h2>
         <p>Your journey to fitness starts here.</p>
       </div>
     </div>
 
     <!-- Slide 3 -->
     <div class="carousel-item" data-bs-interval="4000">
-      <img src="carousalimg3.png" class="d-block w-100" alt="Workout Image 3">
-      <div class="carousel-caption d-none d-md-block">
+      <img src="carousalimg3.png" class="d-block w-100" alt="Carousal Image 3">
+      <div class="carousel-caption">
         <h2>Feel the Burn</h2>
         <p>Unleash your inner strength every single day.</p>
       </div>
