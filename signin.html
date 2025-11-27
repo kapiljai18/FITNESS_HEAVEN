@@ -146,7 +146,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
+   <!-- <script>
         document.getElementById("signinform").addEventListener("submit", function(event) {
             event.preventDefault();
             
@@ -170,6 +170,41 @@
                 alert("Login failed... please check username and password"); // Updated alert for clarity
             }
         });
+    </script>-->
+    <script>
+        // --- PERMANENT SIGNIN LOGIC for signin.html ---
+document.getElementById("signinform").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    // Get the input values
+    let username_input = document.getElementById("uname").value; 
+    let upass_input = document.getElementById("upass").value;
+    
+    // 1. Retrieve the list of all registered users
+    let users = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+    
+    // 2. Find a matching user
+    const foundUser = users.find(user => 
+        user.username === username_input && user.password === upass_input
+    );
+
+    if (foundUser) {
+        // 3. Success: Match found! Set current user data for the navbar
+        localStorage.setItem("uname", foundUser.username); 
+        localStorage.setItem("uemail", foundUser.email); // Optional, but good practice
+        
+        alert("Login successful !!!");
+        window.location.href = "dashboard.html"; 
+
+    } else {
+        // 4. Failure: No match found
+        alert("Login failed... please check username and password");
+    }
+});
+
+// Remove any 'localStorage.removeItem()' you had on signin.html load
+// as it is no longer necessary and could cause issues.
+// --- END OF PERMANENT SIGNIN LOGIC ---
     </script>
 </body>
 </html>
