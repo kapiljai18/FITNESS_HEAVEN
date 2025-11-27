@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FITNESS HEAVEN | Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <link href="FAVICON.png" rel="icon">
+
+    <style>
+      /* Make all service cards same height */
+      .service-card {
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 8px 20px #ff6f61;
+      }
+
+      /* Style for the welcome message (Username text) */
+      .welcome-msg {
+          color: #fff !important; 
+          font-weight: bold;
+          margin-right: 15px;
+          line-height: 40px; /* Align text vertically in the navbar */
+      }
+      
+      /* 🚀 CSS for Navbar Font Change */
+      .navbar-nav .nav-link,
+      .navbar-brand,
+      .welcome-msg {
+          /* Change the font-family below to your desired font! */
+          font-family: 'Arial Black', Arial, sans-serif;
+          font-size: 1.1rem; 
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="FITNESS_HEAVEN_LOGO.png" alt="FITNESS HEAVEN Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutdash.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicedash.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactdash.html">Contact</a></li>
+                    
+                    <li class="nav-item d-flex align-items-center ms-auto" id="auth-links">
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid pt-5" >
+      <div class="container py-5">
+        <div class="d-flex flex-column text-center mb-5">
+          <h1 class="text-dark mb-3">OUR SERVICES</h1>
+          <p class="text-secondary">Bringing you best of the fitness with a fully equipped training environment.</p>
+        </div>
+        <div class="row pb-3">
+          <div class="col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card d-flex flex-column text-center bg-white p-4 w-100">
+              <img src="services1.png" alt="PERSONAL TRAINING" class="mx-auto mb-3" height="100" width="100">
+              <h3 class="mb-3">PERSONAL TRAINING</h3>
+              <p>Tailored workout plans, expert guidance, increased motivation and accountability.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card d-flex flex-column text-center bg-white p-4 w-100">
+              <img src="services2.png" alt="GYMING" class="mx-auto mb-3" height="100" width="100">
+              <h3 class="mb-3">GYMING</h3>
+              <p>Weight management, increased muscle strength, and a stronger heart and lungs.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card d-flex flex-column text-center bg-white p-4 w-100">
+              <img src="services3.png" alt="SPINNING STUDIO" class="mx-auto mb-3" height="100" width="100">
+              <h3 class="mb-3">SPINNING STUDIO</h3>
+              <p>Improving cardiovascular health, building lower body, burning calories for weight management.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card d-flex flex-column text-center bg-white p-4 w-100">
+              <img src="services4.png" alt="CROSS FIT" class="mx-auto mb-3" height="100" width="100">
+              <h3 class="mb-3">CROSS FIT</h3>
+              <p>Increased strength, cardiovascular endurance, improved flexibility, balance and coordination.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card d-flex flex-column text-center bg-white p-4 w-100">
+              <img src="services5.png" alt="KETTLE BELL" class="mx-auto mb-3" height="100" width="100">
+              <h3 class="mb-3">KETTLE BELL</h3>
+              <p>Combination of full-body strength and cardiovascular endurance, promoting fat loss and improving core stability.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card d-flex flex-column text-center bg-white p-4 w-100">
+              <img src="services6.png" alt="ZUMBA" class="mx-auto mb-3" height="100" width="100">
+              <h3 class="mb-3">ZUMBA</h3>
+              <p>Full-body toning, effective calorie and fat burning, improved cardiovascular fitness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-12 mb-5">
+          <h2 class="mb-3 display-5 fw-bold">
+            FITNESS HEAVEN
+          </h2>
+          <p>Our Mission is to create a healthy society making everyone stronger and happier both physically and mentally.</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            <div class="col-md-4 mb-5">
+              <h5 class="mb-4" style="color: #ff6f61;">Get In Touch</h5>
+              <p><i class="bi bi-geo-alt-fill me-2"></i>Jogeshwari, Mumbai, India</p>
+              <p><i class="bi bi-telephone-fill me-2"></i>+91 12345 67890</p>
+              <p><i class="bi bi-envelope-fill me-2"></i>fitnessheaven@gmail.com</p>
+              <div class="d-flex flex-wrap mt-4">
+                <a href="#" class="btn btn-outline-light rounded-circle text-center me-2 mb-2 px-0" style="width: 36px; height: 36px;"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="btn btn-outline-light rounded-circle text-center me-2 mb-2 px-0" style="width: 36px; height: 36px;"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="btn btn-outline-light rounded-circle text-center me-2 mb-2 px-0" style="width: 36px; height: 36px;"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-light rounded-circle text-center me-2 mb-2 px-0" style="width: 36px; height: 36px;"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <h5 class="mb-4" style="color: #ff6f61;">Popular Links</h5>
+              <div class="d-flex flex-column">
+                <a class="text-white mb-2" href="dashboard.html"><i class="bi bi-chevron-right me-2"></i>Home</a>
+                <a class="text-white mb-2" href="aboutdash.html"><i class="bi bi-chevron-right me-2"></i>About Us</a>
+                <a class="text-white mb-2" href="servicedash.html"><i class="bi bi-chevron-right me-2"></i>Our Services</a>
+                <a class="text-white" href="contactdash.html"><i class="bi bi-chevron-right me-2"></i>Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <h5 class="mb-4" style="color: #ff6f61;">Newsletter</h5>
+              <form action="">
+                <div class="mb-3">
+                  <input type="text" class="form-control border-0" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control border-0" placeholder="Your Email" required>
+                </div>
+                <button class="btn btn-lg w-100 border-0" style="color: #fff; background-color:#ff6f61" type="submit">Submit Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="m-0">&copy; FITNESS HEAVEN. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <ul class="nav d-inline-flex flex-wrap justify-content-center justify-content-md-end">
+            <li class="nav-item"><a class="nav-link text-white py-0" href="#">Privacy</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-0" href="#">Terms</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-0" href="#">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-0" href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button id="backToTop" ><a><img height="10px" width="10px" src="arrow.png" alt=""></a></button>
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const authLinksContainer = document.getElementById('auth-links');
+            const uname = localStorage.getItem("uname");
+            
+            if (uname) {
+                // User is signed in: Display Username and Logout button
+                authLinksContainer.innerHTML = `
+                    <span class="welcome-msg">${uname}</span>
+                    <a class="nav-link" href="#" id="logout-btn">Logout</a>
+                `;
+
+                // Add event listener for logout
+                document.getElementById('logout-btn').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Clear all user-related data from localStorage
+                    localStorage.removeItem('uname');
+                    localStorage.removeItem('uemail');
+                    localStorage.removeItem('upass');
+                    // Redirect to the sign-in page
+                    window.location.href = "signin.html";
+                });
+
+            } else {
+                // User is not signed in: Display Sign In and Sign Up links
+                authLinksContainer.innerHTML = `
+                    <a class="nav-link" href="signin.html">SignIn</a>
+                    <a class="nav-link" href="signup.html">SignUp</a>
+                `;
+            }
+        });
+    </script>
+  </body>
+</html>
